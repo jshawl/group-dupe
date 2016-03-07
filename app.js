@@ -27,6 +27,7 @@ function listGroups(){
     prompt.get(['source','destination'], function(err, res){
       env.source = groups[res.source].id;
       env.destination = groups[res.destination].id
+      duplicate()
     })
   })
 }
